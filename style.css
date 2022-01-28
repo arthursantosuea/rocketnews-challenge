@@ -1,0 +1,134 @@
+:root {
+  --body-bg-color: #121214;
+  --text-color: #e1e1e6;
+  --title-color: #04d361;
+  --form-color: #a8a8a8;
+  --bg-button-color: #8257e5;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+    background-image: url("assets/read_news.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+header{
+    padding: 48px;
+}
+header img{
+    width: 400px;
+    height: 100px;
+}
+.black-container{
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    background-color: var(--body-bg-color);
+    z-index: -1;
+}
+section{
+    padding: 48px;
+}
+section h1{
+    color: var(--title-color);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+section h3, section p{
+    color: var(--text-color);
+    font-family: 'Spartan', sans-serif;
+}
+section p{
+    margin-top: 8px;
+}
+form{
+    padding-left: 48px;
+}
+form label{
+    color: var(--form-color);
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+}
+.input{
+    display: flex;
+    margin-top: 16px;
+}
+.input input{
+    width: 55vw;
+    height: 50px;
+    border: 4px solid var(--title-color);
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    outline: none;
+    padding-left: 16px;
+}
+.input button {
+    width: 50px;
+    height: 50px;
+    background-color: var(--bg-button-color);
+    border: none;
+}
+.input button{
+    box-shadow: 12px 8px 24px #121214;
+}
+aside{
+    padding: 48px;
+}
+aside a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+aside a p{
+    font-family: 'Spartan', sans-serif;
+    color: var(--bg-button-color);
+    font-weight: 700;
+}
+aside a img{
+    margin-left: 8px;
+}
+@media(max-width: 1468px){
+    body{
+        background: var(--body-bg-color);
+    }
+    .black-container{
+        display: none;
+    }
+
+} 
+@media(max-width: 600px){
+    body{
+        background: var(--body-bg-color);
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section{
+        width: 90vw;
+        padding: 0;
+        text-align: center;
+    }
+    section h1{
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+    section h3{
+        margin-bottom: 24px;
+    }
+    form{
+        width: 90vw;
+        padding: 0;
+        margin-top: 48px;
+    }
+    .input input{
+        width: 80vw;
+    }
+}
